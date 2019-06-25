@@ -1,4 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
 
 .DS_Store
 node_modules
@@ -21,12 +20,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-.idea/
-LICENSE
-babel.config.js
-docs/
-node_modules/
-package.json
-public/
-src/
-yarn.lock
