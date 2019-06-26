@@ -7,7 +7,7 @@
       </label>
     </div>
     <video ref="video" :src="videoUrl" controls width="600px"></video>
-    <CropTool
+    <crop-tool
       :duration="duration"
       :playing="playing"
       :currentPlayingTime="currentTime"
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import CropTool from "./components/CropTool.vue";
+import cropTool from "./components/CropTool.vue";
 
 export default {
   name: "app",
   components: {
-    CropTool
+    cropTool
   },
   data() {
     return {

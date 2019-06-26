@@ -51,23 +51,29 @@
                 <div class="time-input-area">
                   <span class="time-text">{{language.CUT_BEGIN_TIME}}:</span>
                   <div class="time-input">
-                    <input
-                      type="text"
-                      :value="item.startTimeArr[0]"
-                      @input="startTimeChange($event, getOriginalIndex(index), 0)"
-                    >
+                    <label>
+                      <input
+                        type="text"
+                        :value="item.startTimeArr[0]"
+                        @input="startTimeChange($event, getOriginalIndex(index), 0)"
+                      >
+                    </label>
                     :
-                    <input
-                      type="text"
-                      :value="item.startTimeArr[1]"
-                      @input="startTimeChange($event, getOriginalIndex(index), 1)"
-                    >
+                    <label>
+                      <input
+                        type="text"
+                        :value="item.startTimeArr[1]"
+                        @input="startTimeChange($event, getOriginalIndex(index), 1)"
+                      >
+                    </label>
                     :
-                    <input
-                      type="text"
-                      :value="item.startTimeArr[2]"
-                      @input="startTimeChange($event, getOriginalIndex(index), 2)"
-                    >
+                    <label>
+                      <input
+                        type="text"
+                        :value="item.startTimeArr[2]"
+                        @input="startTimeChange($event, getOriginalIndex(index), 2)"
+                      >
+                    </label>
                   </div>
                 </div>
                 <span class="range-text">~</span>
@@ -75,23 +81,29 @@
                   <span class="time-text">{{language.CUT_END_TIME}}:</span>
 
                   <div class="time-input">
-                    <input
-                      type="text"
-                      :value="item.endTimeArr[0]"
-                      @input="endTimeChange($event, getOriginalIndex(index), 0)"
-                    >
+                    <label>
+                      <input
+                        type="text"
+                        :value="item.endTimeArr[0]"
+                        @input="endTimeChange($event, getOriginalIndex(index), 0)"
+                      >
+                    </label>
                     :
-                    <input
-                      type="text"
-                      :value="item.endTimeArr[1]"
-                      @input="endTimeChange($event, getOriginalIndex(index), 1)"
-                    >
+                    <label>
+                      <input
+                        type="text"
+                        :value="item.endTimeArr[1]"
+                        @input="endTimeChange($event, getOriginalIndex(index), 1)"
+                      >
+                    </label>
                     :
-                    <input
-                      type="text"
-                      :value="item.endTimeArr[2]"
-                      @input="endTimeChange($event, index, 2)"
-                    >
+                    <label>
+                      <input
+                        type="text"
+                        :value="item.endTimeArr[2]"
+                        @input="endTimeChange($event, index, 2)"
+                      >
+                    </label>
                   </div>
                 </div>
               </div>
@@ -114,58 +126,70 @@
           <div class="time-input-area">
             <span class="time-text">{{language.CUT_BEGIN_TIME}}:</span>
             <div class="time-input">
-              <input
-                type="text"
-                :value="renderList[listLength -1]
-                                    && renderList[listLength -1].startTimeArr[0]"
-                @input="startTimeChange($event, 0, 0)"
-                @focus="inputFocus()"
-              >
+              <label>
+                <input
+                  type="text"
+                  :value="renderList[listLength -1]
+                                      && renderList[listLength -1].startTimeArr[0]"
+                  @input="startTimeChange($event, 0, 0)"
+                  @focus="inputFocus()"
+                >
+              </label>
               :
-              <input
-                type="text"
-                :value="renderList[listLength -1]
-                                    && renderList[listLength -1].startTimeArr[1]"
-                @input="startTimeChange($event, 0, 1)"
-                @focus="inputFocus()"
-              >
+              <label>
+                <input
+                  type="text"
+                  :value="renderList[listLength -1]
+                                      && renderList[listLength -1].startTimeArr[1]"
+                  @input="startTimeChange($event, 0, 1)"
+                  @focus="inputFocus()"
+                >
+              </label>
               :
-              <input
-                type="text"
-                :value="renderList[listLength -1]
-                                    && renderList[listLength -1].startTimeArr[2]"
-                @input="startTimeChange($event, 0, 2)"
-                @focus="inputFocus()"
-              >
+              <label>
+                <input
+                  type="text"
+                  :value="renderList[listLength -1]
+                                      && renderList[listLength -1].startTimeArr[2]"
+                  @input="startTimeChange($event, 0, 2)"
+                  @focus="inputFocus()"
+                >
+              </label>
             </div>
           </div>
           <span class="range-text">~</span>
           <div class="time-input-area">
             <span class="time-text">{{language.CUT_END_TIME}}:</span>
             <div class="time-input">
-              <input
-                type="text"
-                :value="renderList[listLength -1]
-                                    && renderList[listLength -1].endTimeArr[0]"
-                @input="endTimeChange($event, 0, 0)"
-                @focus="inputFocus()"
-              >
+              <label>
+                <input
+                  type="text"
+                  :value="renderList[listLength -1]
+                                      && renderList[listLength -1].endTimeArr[0]"
+                  @input="endTimeChange($event, 0, 0)"
+                  @focus="inputFocus()"
+                >
+              </label>
               :
-              <input
-                type="text"
-                :value="renderList[listLength -1]
-                                    && renderList[listLength -1].endTimeArr[1]"
-                @input="endTimeChange($event, 0, 1)"
-                @focus="inputFocus()"
-              >
+              <label>
+                <input
+                  type="text"
+                  :value="renderList[listLength -1]
+                                      && renderList[listLength -1].endTimeArr[1]"
+                  @input="endTimeChange($event, 0, 1)"
+                  @focus="inputFocus()"
+                >
+              </label>
               :
-              <input
-                type="text"
-                :value="renderList[listLength -1]
-                                    && renderList[listLength -1].endTimeArr[2]"
-                @input="endTimeChange($event, 0, 2)"
-                @focus="inputFocus()"
-              >
+              <label>
+                <input
+                  type="text"
+                  :value="renderList[listLength -1]
+                                      && renderList[listLength -1].endTimeArr[2]"
+                  @input="endTimeChange($event, 0, 2)"
+                  @focus="inputFocus()"
+                >
+              </label>
             </div>
           </div>
         </div>
